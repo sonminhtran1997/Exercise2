@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercise 2</title>
+	<script type="text/javascript" src="myScript.js"></script>
+	<style type="text/css">
+		table{
+			width: 100%;
+		}
+		th,td{
+			word-wrap: break-word;
+		}
+		#buttonField{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		input[type="button"]{
+			font-size: 20px;
+			width: 100px;
+			height: 50px;
+		}
+		table,th,tr,td{
+			align: center;
+			border: solid thin;
+			border-collapse: separate;
+		}
+		input[type="text"]{
+			width: 90%;
+			text-align: center;
+		}
+		.delOne{
+			background-image: url(img/delete.png);
+			width: 30px; 
+			height: 30px; 
+			border: 0;
+			background-size: 100%;
+			background-size: 30px auto;
+		}
+		#add{
+			background-image: url(img/add.png);
+			width: 30px; 
+			height: 30px; 
+			border: 0;
+			background-size: 100%;
+			background-size: 30px auto;
+		}
+		
+		#content{
+			position: relative;
+		}
+		#output{
+			font-size: 30px;
+			font-family: sans-serif;
+			color: red;
+			font-style: bold;
+		}
+	}
+</style>
+</head>
+<body background="img/background.jpg">
+	<div id="content">
+		
+		<table id="table">
+			<tr>
+				<th><input type="checkbox" id="checkAll" onchange="checkAll()"></th>
+				<th>Order Number</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th><button class="addButton" id="add" onclick="add()"></button></th>
+			</tr>
+		</table>
+		<br><br><br><br> 	
+		<div id="buttonField">
+			<input type="button" name="deleteSelection" value="Delete" onclick="deleteSelect()">
+			<input type="button" name="save" value="Save" onclick="save()">
+		</div>
+		
+	</div>
+	<div id="output"></div>
+</body>
+</html>
