@@ -3,24 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>Exercise 2</title>
-	<script type="text/javascript" src="myScriptv1.js"></script>
+	<script type="text/javascript" src="myScript.js"></script>
 	<style type="text/css">
 		table{
 			width: 100%;
 		}
-		th,td{
-			word-wrap: break-word;
+		th{
+			align-content: center;
 		}
 		#buttonField{
 			position: absolute;
 			bottom: 0;
 			right: 0;
 		}
-		input[type="button"]{
+		/*.fname,.lname{
 			font-size: 20px;
 			width: 100px;
 			height: 50px;
-		}
+		}*/
 		table,th,tr,td{
 			align: center;
 			border: solid thin;
@@ -28,7 +28,7 @@
 		}
 		input[type="text"]{
 			width: 90%;
-			text-align: center;
+			text-align: left;
 		}
 		.delOne{
 			background-image: url(img/delete.png);
@@ -37,6 +37,9 @@
 			border: 0;
 			background-size: 100%;
 			background-size: 30px auto;
+		}
+		.factor{
+			text-align: right;
 		}
 		#add{
 			background-image: url(img/add.png);
@@ -56,6 +59,7 @@
 			color: red;
 			font-style: bold;
 		}
+
 	}
 </style>
 </head>
@@ -68,6 +72,9 @@
 				<th>Order Number</th>
 				<th>First Name</th>
 				<th>Last Name</th>
+				<th>Điểm</th>
+				<th>Hệ Số</th>
+				<th>Tổng Điểm</th>
 				<th><button class="addButton" id="add" onclick="add()"></button></th>
 			</tr>
 		</table>
