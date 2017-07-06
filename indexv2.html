@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Exercise 2</title>
-	<script type="text/javascript" src="myScript.js"></script>
+	<script type="text/javascript" src="myScriptv2.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css" type="text/css" media="all">
 	<style type="text/css">
 		table{
 			width: 100%;
@@ -74,6 +77,7 @@
 				<th>Last Name</th>
 				<th>Điểm</th>
 				<th>Hệ Số</th>
+				<th>Ngày Thi</th>
 				<th>Tổng Điểm</th>
 				<th><button class="addButton" id="add" onclick="add()"></button></th>
 			</tr>
@@ -83,7 +87,6 @@
 			<input type="button" name="deleteSelection" value="Delete" onclick="deleteSelect()">
 			<input type="button" name="save" value="Save" onclick="save()">
 		</div>
-		
 	</div>
 	<div id="output"></div>
 </body>
